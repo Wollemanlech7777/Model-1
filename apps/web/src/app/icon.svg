@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Site Companion">
+  <!-- Favicon mark from companion avatar: black body + white capsule eyes -->
+  <circle cx="16" cy="16" r="16" fill="#000000"/>
+  <rect x="9" y="10.5" width="4.5" height="10" rx="2.25" fill="#FFFFFF"/>
+  <rect x="18.5" y="10.5" width="4.5" height="10" rx="2.25" fill="#FFFFFF"/>
+</svg>

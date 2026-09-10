@@ -1,0 +1,30 @@
+# Site Companion — Python / Node
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Local / OS / tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+.next/
+dist/
+build/
+*.egg-info/
+.DS_Store
+.coverage
+htmlcov/
+
+# Credential / key material (never commit)
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
