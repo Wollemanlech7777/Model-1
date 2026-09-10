@@ -396,7 +396,7 @@ export function ChatShell() {
 
   return (
     <div className="page">
-      <HomeGuideCard visible={isHome} />
+      <HomeGuideCard visible />
       <SystemCapabilities groups={capabilityGroups} />
       <div className={`shell ${isHome ? "shell--home" : "shell--chat"}`}>
         <header className="shell__stage">
