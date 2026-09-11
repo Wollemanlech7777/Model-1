@@ -1503,7 +1503,7 @@ input {
     bottom: auto;
     z-index: 1;
     flex: 0 0 auto;
-    order: 2;
+    order: initial;
     box-sizing: border-box;
     width: auto;
     max-width: none;
@@ -1591,7 +1591,7 @@ input {
     transform: none;
     z-index: 1;
     flex: 0 0 auto;
-    order: 3;
+    order: initial;
     width: auto;
     max-width: none;
     height: auto;
@@ -1607,6 +1607,7 @@ input {
 
   .capabilities__mobile-toggle {
     display: flex;
+    width: 100%;
     margin: 0;
     padding: 0.7rem 0.85rem;
     border: 1px solid rgba(255, 255, 255, 0.7);
@@ -1658,9 +1659,10 @@ input {
     z-index: 2;
     width: 100%;
     height: auto;
-    flex: 1 1 auto;
+    /* Stack naturally so guide + capabilities stay in the page scroll. */
+    flex: 0 0 auto;
     max-height: none;
-    order: 1;
+    order: initial;
   }
 }
 
@@ -1671,7 +1673,6 @@ input {
   }
 
   .home-guide {
-    order: 2;
     margin: 0.45rem 0.55rem 0.3rem;
     padding: 0.45rem 0.6rem 0.48rem;
     border-radius: 14px;
@@ -1726,7 +1727,7 @@ input {
   .shell {
     width: 100%;
     height: auto;
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     max-height: none;
     border-radius: 0;
     border: 0;
@@ -1734,7 +1735,6 @@ input {
   }
 
   .capabilities {
-    order: 3;
     margin: 0.1rem 0.55rem calc(0.75rem + env(safe-area-inset-bottom));
     border-radius: 0;
   }
