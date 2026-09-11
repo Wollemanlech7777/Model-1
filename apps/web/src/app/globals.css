@@ -1495,27 +1495,92 @@ input {
   }
 
   .home-guide {
-    position: fixed;
+    /* In document flow on small screens — never overlay the composer. */
+    position: relative;
     top: auto;
-    right: 0.75rem;
-    left: 0.75rem;
-    bottom: calc(0.75rem + env(safe-area-inset-bottom));
-    z-index: 4;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    z-index: 1;
+    flex: 0 0 auto;
+    order: 0;
     width: auto;
     max-width: none;
+    margin: 0.45rem 0.65rem 0.35rem;
+    padding: 0.55rem 0.7rem 0.55rem;
+    max-height: none;
+    overflow: visible;
+    border-radius: 16px;
+    pointer-events: none;
+  }
+
+  .home-guide__header {
     margin: 0;
-    padding: 0.7rem 0.8rem 0.75rem;
-    max-height: min(38vh, 220px);
-    overflow: auto;
+  }
+
+  .home-guide__section--scenario {
+    margin-top: 0.35rem;
+  }
+
+  .home-guide__section + .home-guide__section {
+    margin-top: 0.4rem;
+    padding-top: 0.38rem;
+  }
+
+  .home-guide__label {
+    margin: 0 0 0.18rem;
+    font-size: 0.5rem;
+  }
+
+  .home-guide__title {
+    font-size: 0.7rem;
+    line-height: 1.3;
   }
 
   .home-guide__copy {
     max-width: none;
+    font-size: 0.62rem;
+    line-height: 1.4;
   }
 
-  .home-guide__section + .home-guide__section {
-    margin-top: 0.7rem;
-    padding-top: 0.65rem;
+  .home-guide__copy--lead {
+    font-size: 0.63rem;
+    line-height: 1.4;
+  }
+
+  .home-guide__copy--emphasis {
+    font-size: 0.6rem;
+  }
+
+  .home-guide__outcomes-list {
+    gap: 0.28rem;
+  }
+
+  .home-guide__outcome-key {
+    font-size: 0.52rem;
+  }
+
+  .home-guide__outcome-desc {
+    font-size: 0.58rem;
+    line-height: 1.3;
+  }
+
+  .home-guide__practice {
+    gap: 0.06rem;
+  }
+
+  .home-guide__practice-node,
+  .home-guide__practice-node--mono {
+    font-size: 0.56rem;
+  }
+
+  .home-guide__practice-node--mono {
+    padding: 0.14rem 0.35rem;
+  }
+
+  .home-guide__practice-arrow {
+    font-size: 0.48rem;
+    margin: 0 0 0 0.28rem;
   }
 
   .capabilities {
@@ -1577,6 +1642,58 @@ input {
   .page {
     padding: 0;
     align-items: stretch;
+  }
+
+  .home-guide {
+    margin: 0.35rem 0.55rem 0.25rem;
+    padding: 0.45rem 0.6rem 0.48rem;
+    border-radius: 14px;
+  }
+
+  .home-guide__section--scenario {
+    margin-top: 0.28rem;
+  }
+
+  .home-guide__section + .home-guide__section {
+    margin-top: 0.32rem;
+    padding-top: 0.3rem;
+  }
+
+  .home-guide__label {
+    margin: 0 0 0.12rem;
+    letter-spacing: 0.14em;
+  }
+
+  .home-guide__title {
+    font-size: 0.66rem;
+    line-height: 1.28;
+  }
+
+  .home-guide__copy {
+    font-size: 0.58rem;
+    line-height: 1.35;
+  }
+
+  .home-guide__copy--lead {
+    font-size: 0.59rem;
+    line-height: 1.35;
+  }
+
+  .home-guide__copy--emphasis {
+    font-size: 0.56rem;
+  }
+
+  .home-guide__outcomes-list {
+    gap: 0.22rem;
+  }
+
+  .home-guide__outcomes-list li {
+    grid-template-columns: 3.6rem 1fr;
+    gap: 0.35rem;
+  }
+
+  .home-guide__outcome-desc {
+    font-size: 0.55rem;
   }
 
   .shell {
